@@ -3,25 +3,25 @@ import { IsString, IsNumber, validateSync } from 'class-validator';
 
 class EnvironmentVariables {
   @IsString()
-  NODE_ENV: string;
+  NODE_ENV!: string;
 
   @IsNumber()
-  API_PORT: number;
+  API_PORT!: number;
 
   @IsString()
-  DATABASE_URL: string;
+  DATABASE_URL!: string;
 
   @IsString()
-  REDIS_URL: string;
+  REDIS_URL!: string;
 
   @IsString()
-  MONGODB_URI: string;
+  MONGODB_URI!: string;
 
   @IsString()
-  JWT_ACCESS_SECRET: string;
+  JWT_ACCESS_SECRET!: string;
 
   @IsString()
-  JWT_REFRESH_SECRET: string;
+  JWT_REFRESH_SECRET!: string;
 }
 
 export function validateEnv(config: Record<string, unknown>) {
