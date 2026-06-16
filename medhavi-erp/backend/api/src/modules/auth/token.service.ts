@@ -3,8 +3,8 @@ import { ConfigType } from '@nestjs/config';
 import { JwtService } from '@nestjs/jwt';
 import { createHash, randomUUID } from 'crypto';
 import authConfig from './config/auth.config';
-import { PrismaService } from '@/infrastructure/prisma/prisma.service';
-import { RedisService } from '@/infrastructure/common/redis/redis.service';
+import { PrismaService } from '../../infrastructure/prisma/prisma.service';
+import { RedisService } from '../../infrastructure/redis/redis.service';
 
 export interface JwtAccessPayload {
   sub: string;

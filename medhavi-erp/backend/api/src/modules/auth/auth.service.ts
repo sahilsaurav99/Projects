@@ -19,7 +19,7 @@ import {
 } from '@prisma/client';
 import { randomBytes, randomUUID } from 'crypto';
 import authConfig from './config/auth.config';
-import { PrismaService } from '@/infrastructure/prisma/prisma.service';
+import { PrismaService } from '../../infrastructure/prisma/prisma.service';
 import { PasswordService } from './password.service';
 import { TokenService } from './token.service';
 import { AuditService, RequestCtx } from './audit.service';
