@@ -10,6 +10,8 @@ import { TenantModule } from './tenancy/tenant.module';
 import configuration from './config/configuration';
 import { validateEnv } from './config/env.validation';
 import { InstitutesModule } from './modules/institutes/institutes.module';
+import { CampusesModule } from './modules/campuses/campuses.module';
+
 
 @Module({
   imports: [
@@ -26,6 +28,7 @@ import { InstitutesModule } from './modules/institutes/institutes.module';
     TenantModule,
     HealthModule,
     InstitutesModule,
+    CampusesModule,
 
     AuthModule, 
   ],

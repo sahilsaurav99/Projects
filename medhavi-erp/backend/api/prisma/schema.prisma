@@ -6,8 +6,8 @@ generator client {
 generator erd {
   provider    = "prisma-erd-generator"
   output      = "./ERD.md"
-  ignoreEnums = "true"
   tableOnly   = "true"
+  ignoreEnums = "true"
 }
 
 datasource db {
@@ -459,7 +459,7 @@ model AuthCredential {
   createdAt    DateTime  @default(now()) @map("created_at")
   updatedAt    DateTime  @updatedAt @map("updated_at")
   user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
-https://github.com/sahilsaurav99/Projects.git
+
   @@index([userId, isCurrent])
   @@map("auth_credentials")
 }
