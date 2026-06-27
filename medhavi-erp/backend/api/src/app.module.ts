@@ -18,6 +18,7 @@ import { AcademicYearsModule } from './modules/academic-years/academic-years.mod
 import { BatchesModule } from './modules/batches/batches.module';
 import { StudentsModule } from './modules/students/students.module';
 import { UsersModule } from './modules/users/users.module';
+import { FacultyModule } from './modules/faculty/faculty.module';
 
 
 @Module({
@@ -42,6 +43,7 @@ import { UsersModule } from './modules/users/users.module';
     AcademicYearsModule,
     StudentsModule,
     UsersModule,
+    FacultyModule,
 
     BatchesModule,
 
