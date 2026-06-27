@@ -20,6 +20,7 @@ import { StudentsModule } from './modules/students/students.module';
 import { UsersModule } from './modules/users/users.module';
 import { FacultyModule } from './modules/faculty/faculty.module';
 import { SubjectsModule } from './modules/subjects/subjects.module';
+import { TermsModule } from './modules/terms/terms.module';
 
 
 @Module({
@@ -46,6 +47,7 @@ import { SubjectsModule } from './modules/subjects/subjects.module';
     UsersModule,
     FacultyModule,
     SubjectsModule,
+    TermsModule,
 
     BatchesModule,
 
