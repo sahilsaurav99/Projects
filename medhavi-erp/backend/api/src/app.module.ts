@@ -23,7 +23,9 @@ import { SubjectsModule } from './modules/subjects/subjects.module';
 import { TermsModule } from './modules/terms/terms.module';
 import { SectionsModule } from './modules/sections/sections.module';
 import { SubjectOfferingsModule } from './modules/subject-offerings/subject-offerings.module';
-
+import { CoursesModule } from './modules/courses/courses.module';
+import { CourseModulesModule } from './modules/course-modules/course-modules.module';
+import { ResourcesModule } from './modules/resources/resources.module';
 
 @Module({
   imports: [
@@ -52,6 +54,9 @@ import { SubjectOfferingsModule } from './modules/subject-offerings/subject-offe
     TermsModule,
     SectionsModule,
     SubjectOfferingsModule,
+    CoursesModule,
+    CourseModulesModule,
+    ResourcesModule,
 
     BatchesModule,
 

@@ -14,9 +14,11 @@ RUN pnpm --filter @medhavi/api prisma:generate \
 FROM node:20-alpine AS runtime
 WORKDIR /app
 ENV NODE_ENV=production
+RUN npm install -g prisma
 COPY --from=build /repo/backend/api/dist ./dist
 COPY --from=build /repo/backend/api/node_modules ./node_modules
 COPY --from=build /repo/backend/api/prisma ./prisma
 COPY --from=build /repo/backend/api/package.json ./
+COPY --from=build /repo/packages ./packages
 EXPOSE 4000
 CMD ["node", "dist/main.js"]
