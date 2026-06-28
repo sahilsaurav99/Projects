@@ -21,6 +21,7 @@ import { UsersModule } from './modules/users/users.module';
 import { FacultyModule } from './modules/faculty/faculty.module';
 import { SubjectsModule } from './modules/subjects/subjects.module';
 import { TermsModule } from './modules/terms/terms.module';
+import { SectionsModule } from './modules/sections/sections.module';
 
 
 @Module({
@@ -48,6 +49,7 @@ import { TermsModule } from './modules/terms/terms.module';
     FacultyModule,
     SubjectsModule,
     TermsModule,
+    SectionsModule,
 
     BatchesModule,
 
